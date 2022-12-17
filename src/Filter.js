@@ -7,12 +7,11 @@ const Filter = ({ popular, setFilterd, genre, setGenre }) => {
       return;
     }
 
-    const filteredItem = popular.filter((movie) =>
-      movie.genre_id.includes(genre)
+    const filteredItem = popular?.filter((movie) =>
+      movie?.genre_id?.includes(genre)
     );
     setFilterd(filteredItem);
   }, [genre]);
-
   return (
     <div className="btnCon">
       <button onClick={() => setGenre(0)}>All</button>

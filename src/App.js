@@ -20,7 +20,6 @@ function App() {
     setPopular(moviesList.results);
     setFilterd(moviesList.results);
   };
-  console.log(popular);
 
   return (
     <>
